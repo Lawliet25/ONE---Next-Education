@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pintando bandera</title>
+
+</head>
+            <canvas width="600px" height="400px">
+
+            </canvas>
+    <script>
+        let pizarra = document.querySelector("canvas");
+        let brocha = pizarra.getContext("2d");
+
+        brocha.fillStyle="white";
+        brocha.fillRect(200,0,200,400);
+
+        brocha.fillStyle="green";
+        brocha.fillRect(0,0,200,400);
+
+        brocha.fillStyle="red";
+        brocha.fillRect(400,0,200,400);
+        
+        brocha.fillStyle='blue'
+        brocha.beginPath();
+        brocha.arc(300,200,50,0,2*3.14);
+        brocha.fill();
+
+        brocha.fillStyle='yellow';
+        brocha.beginPath();
+        brocha.moveTo(300,200);
+        brocha.lineTo(200,400);
+        brocha.lineTo(400,400);
+        brocha.fill();
+
+    </script>
+
+
+</html>
