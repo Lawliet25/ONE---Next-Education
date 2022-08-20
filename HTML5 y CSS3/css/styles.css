@@ -1,0 +1,60 @@
+body{
+    
+}
+header{
+    text-align: center;
+    text-decoration: underline;
+    font-family: verdana;
+    font-size:25px;
+    margin-bottom: 10px;
+}
+
+img{
+    width: 100%;
+}
+h1, h2{
+    font-family: verdana;
+    text-align: center;
+    font-weight:100;
+}
+p{
+    text-align: justify;
+    font-family: verdana;
+    font-size: 17px;
+    font-weight: 500;
+}
+.principal{
+    background-color: #A7A7A7;
+    padding:70px;
+}
+.about{
+    font-family:tahoma;
+    font-size: 25px;
+}
+.rojita{
+    color: red;
+}
+p{
+    text-align: center;
+}
+.mision{
+    font-style: italic;
+}
+ul{
+    display: inline-block;
+    margin-right: 10%;
+    font-family: tahoma;
+}
+.diferenciales{
+    text-align: center;
+}
+.items{
+    text-align: left;
+}
+.imagenDiferenciales{
+    width: 35%;
+    border-radius: 10px;
+    vertical-align: top;
+    box-shadow: 0px 10px 10px 0px black;
+    
+}

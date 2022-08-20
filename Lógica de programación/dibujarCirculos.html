@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dibujar círculos</title>
+</head>
+<body>
+    <canvas width="600" height="400">
+
+    </canvas>
+    <script>
+        let pizarra = document.querySelector("canvas");
+        let pincel = pizarra.getContext("2d");
+        pincel.fillStyle='black';
+        pincel.fillRect(0,0,600,400);
+
+        //Funcion dibujar
+
+        function dibujarCirculos(elemento){
+            let x = elemento.pageX - pizarra.offsetLeft;
+            let y = elemento.pageY - pizarra.offsetTop;
+            pincel.beginPath();
+            pincel.fillStyle='red';
+            pincel.arc(x,y,10,0,2*3.140);
+            pincel.fill();
+
+        }
+        function cambiarColor(){
+
+        }
+
+        pizarra.onclick=dibujarCirculos;
+
+    </script>
+</body>
+</html>
